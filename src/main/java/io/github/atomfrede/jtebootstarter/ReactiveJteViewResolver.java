@@ -1,10 +1,8 @@
 package io.github.atomfrede.jtebootstarter;
 
 import gg.jte.TemplateEngine;
-import gg.jte.runtime.Template;
 import org.springframework.web.reactive.result.view.AbstractUrlBasedView;
 import org.springframework.web.reactive.result.view.UrlBasedViewResolver;
-import org.springframework.web.reactive.result.view.freemarker.FreeMarkerView;
 
 public class ReactiveJteViewResolver extends UrlBasedViewResolver {
 

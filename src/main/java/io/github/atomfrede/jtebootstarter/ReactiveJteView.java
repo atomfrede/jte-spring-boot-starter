@@ -8,13 +8,9 @@ import org.springframework.core.io.buffer.PooledDataBuffer;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.result.view.AbstractUrlBasedView;
 import org.springframework.web.server.ServerWebExchange;
-import org.springframework.web.servlet.view.AbstractTemplateView;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.Map;
 

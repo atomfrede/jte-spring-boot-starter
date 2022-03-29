@@ -1,7 +1,6 @@
 package io.github.atomfrede.jtebootstarter;
 
 import gg.jte.TemplateEngine;
-import org.springframework.web.servlet.view.AbstractTemplateView;
 import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
 import org.springframework.web.servlet.view.AbstractUrlBasedView;
 
