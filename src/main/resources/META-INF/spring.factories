@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
+  io.github.atomfrede.jtebootstarter.JteAutoConfiguration,\
+  io.github.atomfrede.jtebootstarter.ReactiveJteAutoConfiguration
