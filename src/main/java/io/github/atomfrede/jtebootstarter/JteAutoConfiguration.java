@@ -12,13 +12,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
 @Configuration
-@ConditionalOnClass({TemplateEngine.class, ViewResolver.class})
+@ConditionalOnClass({TemplateEngine.class, AbstractTemplateViewResolver.class})
 @EnableConfigurationProperties(JteProperties.class)
 public class JteAutoConfiguration {
 
@@ -51,8 +52,6 @@ public class JteAutoConfiguration {
                 templateEngine.setBinaryStaticContent(true);
                 return templateEngine;
             }
+
     }
-
-
-
 }

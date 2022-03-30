@@ -11,13 +11,13 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.web.reactive.result.view.ViewResolver;
+import org.springframework.web.reactive.result.view.UrlBasedViewResolver;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Configuration
-@ConditionalOnClass({TemplateEngine.class, ViewResolver.class})
+@ConditionalOnClass({TemplateEngine.class, UrlBasedViewResolver.class})
 @EnableConfigurationProperties(JteProperties.class)
 public class ReactiveJteAutoConfiguration {
 

@@ -1,6 +1,7 @@
 package io.github.atomfrede.jtebootstarter;
 
 import gg.jte.TemplateEngine;
+import org.springframework.core.Ordered;
 import org.springframework.web.reactive.result.view.AbstractUrlBasedView;
 import org.springframework.web.reactive.result.view.UrlBasedViewResolver;
 
@@ -10,8 +11,9 @@ public class ReactiveJteViewResolver extends UrlBasedViewResolver {
 
     public ReactiveJteViewResolver(TemplateEngine templateEngine) {
         this.templateEngine = templateEngine;
-        this.setViewClass(ReactiveJteView.class);
         this.setSuffix(".jte");
+        this.setViewClass(JteView.class);
+        this.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 
     @Override
