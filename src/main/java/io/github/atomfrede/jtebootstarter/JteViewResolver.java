@@ -6,7 +6,7 @@ import org.springframework.web.servlet.view.AbstractUrlBasedView;
 
 public class JteViewResolver extends AbstractTemplateViewResolver {
 
-    private TemplateEngine templateEngine;
+    private final TemplateEngine templateEngine;
 
     public JteViewResolver(TemplateEngine templateEngine) {
         this.setSuffix(".jte");

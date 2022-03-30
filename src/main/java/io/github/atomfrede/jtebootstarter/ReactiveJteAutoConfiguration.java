@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.web.reactive.result.view.ViewResolver;
 
 import java.nio.file.Path;
@@ -19,6 +20,9 @@ import java.nio.file.Paths;
 @ConditionalOnClass({TemplateEngine.class, ViewResolver.class})
 @EnableConfigurationProperties(JteProperties.class)
 public class ReactiveJteAutoConfiguration {
+
+    @Autowired
+    private Environment environment;
 
     @Autowired
     private JteProperties jteProperties;
@@ -33,8 +37,7 @@ public class ReactiveJteAutoConfiguration {
     @ConditionalOnMissingBean(TemplateEngine.class)
     public TemplateEngine jteTemplateEngine() {
 
-        String profile = System.getenv("SPRING_ENV");
-        if (jteProperties.getProductionProfileName().equals(profile)) {
+        if (jteProperties.isProductionEnabled(environment)) {
             // Templates will be compiled by the maven build task
             return TemplateEngine.createPrecompiled(ContentType.Html);
         } else {

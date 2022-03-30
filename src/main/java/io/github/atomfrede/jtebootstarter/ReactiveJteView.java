@@ -23,13 +23,12 @@ public class ReactiveJteView extends AbstractUrlBasedView {
     }
 
     @Override
-    public boolean checkResourceExists(Locale locale) throws Exception {
-        return false;
+    public boolean checkResourceExists(Locale locale) {
+        return templateEngine.hasTemplate(this.getUrl());
     }
 
     @Override
     protected Mono<Void> renderInternal(Map<String, Object> renderAttributes, MediaType contentType, ServerWebExchange exchange) {
-
 
         return exchange.getResponse().writeWith(Mono
                 .fromCallable(() -> {

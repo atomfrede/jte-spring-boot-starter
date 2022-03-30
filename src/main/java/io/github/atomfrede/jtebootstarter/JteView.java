@@ -6,6 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.servlet.view.AbstractTemplateView;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 import java.util.Map;
 
 public class JteView extends AbstractTemplateView {
@@ -14,6 +15,11 @@ public class JteView extends AbstractTemplateView {
 
     public JteView(TemplateEngine templateEngine) {
         this.templateEngine = templateEngine;
+    }
+
+    @Override
+    public boolean checkResource(Locale locale) {
+        return templateEngine.hasTemplate(this.getUrl());
     }
 
     @Override

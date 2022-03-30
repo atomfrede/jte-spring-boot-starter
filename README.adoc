@@ -1,0 +1,15 @@
+= JTE Spring Boot Starter
+
+> https://jte.gg/[jte] is a secure and lightweight template engine for Java and Kotlin.
+> All jte templates are compiled to Java class files, meaning jte adds essentially zero overhead to your application.
+> jte is designed to introduce as few new keywords as possible and builds upon existing Java features, so that it is very easy to reason about what a template does.
+> The https://plugins.jetbrains.com/plugin/14521-jte[IntelliJ plugin] offers full completion and refactoring support for Java parts as well as for jte keywords.
+> Supports Java 8 or higher.
+
+image:https://img.shields.io/badge/license-Apache%202.0-blue.svg[link=https://raw.githubusercontent.com/atomfrede/jte-spring-boot-starter/main/LICENSE.txt]
+
+== Installation
+
+== Usage
+
+
