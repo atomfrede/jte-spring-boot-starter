@@ -16,7 +16,7 @@ public class JteViewResolver extends AbstractTemplateViewResolver {
 
     @Override
     protected AbstractUrlBasedView instantiateView() {
-        return (getViewClass() == JteView.class ? new JteView(templateEngine) : super.instantiateView());
+        return new JteView(templateEngine);
     }
 
     @Override

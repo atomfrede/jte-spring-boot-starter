@@ -29,7 +29,7 @@ public class ReactiveJteAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(ReactiveJteViewResolver.class)
-    public ReactiveJteViewResolver viewResolver(TemplateEngine templateEngine) {
+    public ReactiveJteViewResolver reactiveJteViewResolver(TemplateEngine templateEngine) {
 
         return new ReactiveJteViewResolver(templateEngine);
     }
