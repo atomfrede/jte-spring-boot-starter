@@ -6,6 +6,34 @@
   <artifactId>jte-spring-boot-starter</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
+  <name>jte spring boot starter</name>
+  <description>A minimal spring boot starter to integrate jte template engine with ease.</description>
+  <url>https://github.com/atomfrede/jte-spring-boot-starter</url>
+
+  <inceptionYear>2022</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>atomfrede</id>
+      <name>Frederik Hahne</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git@github.com:atomfrede/jte-spring-boot-starter.git</connection>
+    <developerConnection>scm:git:git@github.com:atomfrede/jte-spring-boot-starter.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/atomfrede/jte-spring-boot-starter</url>
+  </scm>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java-module-name>io.github.atomfrede.jte.springframework.boot.autoconfigured</java-module-name>

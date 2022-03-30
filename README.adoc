@@ -1,4 +1,5 @@
 = JTE Spring Boot Starter
+:source-highlighter: rouge
 
 > https://jte.gg/[jte] is a secure and lightweight template engine for Java and Kotlin.
 > All jte templates are compiled to Java class files, meaning jte adds essentially zero overhead to your application.
@@ -9,5 +10,22 @@
 image:https://img.shields.io/badge/license-Apache%202.0-blue.svg[link=https://raw.githubusercontent.com/atomfrede/jte-spring-boot-starter/main/LICENSE.txt]
 
 == Installation
+
+Add following dependency to your `pom.xml` or `build.gradle`
+
+[source,xml]
+----
+
+<dependency>
+      <groupId>io.github.atomfrede</groupId>
+      <artifactId>jte-spring-boot-starter</artifactId>
+      <versino>INSERT_LATEST_VERSION</version>
+</dependency>
+----
+
+[source,groovy]
+----
+implementation: 'io.github.atomfrede:jte-spring-boot-starter:INSERT_LATEST_VERSION'
+----
 
 == Usage
