@@ -1,4 +1,4 @@
-package io.github.atomfrede.jtebootstarter;
+package io.github.atomfrede.jte.springframework.boot.autoconfigured;
 
 import gg.jte.CodeResolver;
 import gg.jte.ContentType;
@@ -11,7 +11,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
 
 import java.nio.file.Path;

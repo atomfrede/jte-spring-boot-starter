@@ -1,4 +1,4 @@
-package io.github.atomfrede.jtebootstarter;
+package io.github.atomfrede.jte.springframework.boot.autoconfigured;
 
 import gg.jte.CodeResolver;
 import gg.jte.ContentType;
@@ -33,6 +33,7 @@ public class ReactiveJteAutoConfiguration {
 
         return new ReactiveJteViewResolver(templateEngine);
     }
+
     @Bean
     @ConditionalOnMissingBean(TemplateEngine.class)
     public TemplateEngine jteTemplateEngine() {

@@ -1,4 +1,4 @@
-package io.github.atomfrede.jtebootstarter;
+package io.github.atomfrede.jte.springframework.boot.autoconfigured;
 
 import gg.jte.TemplateEngine;
 import gg.jte.output.Utf8ByteOutput;
