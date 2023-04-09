@@ -1,4 +1,4 @@
-This repository is deprecated. Since `2.0.2` the starter is part of the official https://github.com/casid/jte[jte org]. You can find the https://github.com/casid/jte/tree/master/jte-spring-boot-starter[source code there].
+This repository is deprecated. Since `2.0.2` the starter is part of the official https://github.com/casid/jte[jte org]. You can find the https://github.com/casid/jte/tree/main/jte-spring-boot-starter-2[source code there]. There is also a https://github.com/casid/jte/tree/main/jte-spring-boot-starter-3[starter which is compatible with spring boot 3].
 
 = JTE Spring Boot Starter
 :source-highlighter: rouge
